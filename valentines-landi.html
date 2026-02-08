@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentines Landing Page</title>
+    <title>Valentine's Landi</title>
+    <script>
+        function changeColor() {
+            // fix applied here
+            this.style.color = '#ddd';
+        }
+    </script>
     <style>
-        /* Your CSS styles */
+        body {
+            background-color: pink;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Happy Valentine's Day!</h1>
-        <p>Welcome to our special landing page for Valentine's Day.</p>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const elements = document.querySelectorAll('.some-class');
-                elements.forEach(function(element) {
-                    element.addEventListener('click', function() {
-                        // Fix the JavaScript error by changing the color
-                        this.style.color = '#ddd';
-                    });
-                });
-            });
-        </script>
-    </div>
+    <h1>Welcome to Valentine's Landi</h1>
+    <button onclick="changeColor.call(this)">Change my color</button>
 </body>
 </html>
