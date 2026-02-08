@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Landi</title>
-    <script>
-        function changeColor() {
-            // fix applied here
-            this.style.color = '#ddd';
-        }
-    </script>
+    <title>Valentine's Day</title>
     <style>
         body {
-            background-color: pink;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #ff007f;
+        }
+        .item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .item:hover {
+            cursor: pointer;
+            this.style.color = '#ddd';
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Valentine's Landi</h1>
-    <button onclick="changeColor.call(this)">Change my color</button>
+    <div class="container">
+        <div class="header">
+            <h1>Happy Valentine's Day!</h1>
+        </div>
+        <div class="item" onclick="this.style.color = '#ddd';">
+            <p>Click me to change my color!</p>
+        </div>
+        <div class="item" onclick="this.style.color = '#ddd';">
+            <p>Click me too!</p>
+        </div>
+    </div>
+    <script>
+        // Your JavaScript code here
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Document ready');
+        });
+    </script>
 </body>
 </html>
